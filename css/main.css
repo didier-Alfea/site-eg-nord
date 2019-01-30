@@ -57,6 +57,13 @@ body {
   left: 23%;
   font-size: 4em;
 }
+/*
+Forces carousel image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+}
 /* Standard syntax */
 @keyframes moveDown {
     from {top: 75%;}
@@ -90,10 +97,10 @@ video {
 }
 /* *************  nosRecettes *********** */
 #laSociete {
-  margin-top: 10vh;
-  padding-top: 5vh;
+  margin-top: 8vh;
+  padding-top: 15vh;
   background-color: white;
-  height: 60vh;
+  height: 80vh;
 }
 h2{
   font-size: 5rem;
@@ -160,7 +167,7 @@ hr {
 }
 
 /* *************  nosReferences *********** */
-#nosReferences {
+#contact {
   background-color: white;
     /* margin-top: 100vh; */
     background-color: white;
@@ -191,4 +198,14 @@ hr {
   color: white;
   background-color: #333;
   border-color: #333;
+}
+
+
+@media screen and (max-width: 810px) {
+  #hero {
+     /* ? pourquoi le relative ne permet pas de centrer les éléments  */
+    /* position: relative; */
+    margin-top: 15vh;
+    height: 50vh;
+  }
 }
