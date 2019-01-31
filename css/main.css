@@ -22,10 +22,14 @@ body {
 /* **********************************
         NAVBAR
 ********************************** */
- .navbar-default {
-  display: none;
+#navbar {
+	background-color: #212d39;
+  opacity: .8;
+	border-bottom: 5px solid #3e2c0a;
 }
-
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .navbar-header > navbar-brand {
+	color: #fff;
+}
 #hero {
    /* ? pourquoi le relative ne permet pas de centrer les éléments  */
   /* position: relative; */
@@ -33,8 +37,15 @@ body {
   font-family: 'Titillium Web', sans-serif;
   padding-left: 0;
   padding-right: 0;
-  margin-top: 15vh;
-  height: 95vh;
+  margin-top: 100px;
+  height: 810px;
+}
+#laSociete .jumbotron {
+  /* position: absolute; */
+  background: none;
+  top: 30%;
+  left: 20%;
+  /* width: 70%; */
 }
 #title {
   position: absolute;
@@ -200,6 +211,22 @@ hr {
   border-color: #333;
 }
 
+/* **************  nosMenus   ************* */
+#leMenu {
+  padding-top: 70px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/menuImg.jpg);
+  /* ne pas repeter l'image  */
+  background-repeat: no-repeat;
+  /* l'image couvre tout le fond */
+  /* background-size: cover; */
+  background-size: 100% auto;
+  /* se deplacer dans l'image de fond */
+  /* background-attachment: fixed; */
+}
+#leMenu img {
+}
 
 @media screen and (max-width: 810px) {
   #hero {
